@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="kk0">
+    <input type="button" value="remember" onclick="clicar()">
+    <div id="res">RESULTADO</div>
+
+    <script>
+       function clicar() {
+        var inp1 = window.document.getElementById("kk0")
+        var res = window.document.getElementById("res")
+        var r = (inp1.value)
+        res.innerText = "o seu nome é " + r
+
+
+        if (r.toLowerCase() === "leonardo") {
+            res.innerText = "tu é foda irmao"
+        }
+
+
+       }
+         
+    </script>
+
+
+</body>
+</html>
